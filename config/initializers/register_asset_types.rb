@@ -1,3 +1,3 @@
 require 'fassets_core'
 
-FassetsCore::Plugins::register({:name => "Code", :class => Code})
+FassetsCore::Plugins::register({:name => "Code", :class => FassetsCodeAssets::Code})
