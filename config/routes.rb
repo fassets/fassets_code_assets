@@ -1,3 +1,3 @@
-Rails.application.routes.draw do
+FassetsCodeAssets::Engine.routes.draw do
   resources :codes
 end
