@@ -1,8 +1,9 @@
-%p
-  %label{:for => 'lang'} Language:
-  =form.text_field :lang
-  #lang_warning
-  %label{:for => 'content'} Code:
-  =form.text_area :content
-  #content_warning
+=fields_for "fassets_code_assets_code" do |a|
+  %p
+    =a.label :lang, "Language:"
+    =a.text_field :lang, :value => @content.lang
+    #lang_warning
+    =a.label :content, "Code:"
+    =a.text_area :content, :value => @content.content
+    #content_warning
 
