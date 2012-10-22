@@ -6,4 +6,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require fassets_core
+//= require fassets_code_assets
 //= require_tree .

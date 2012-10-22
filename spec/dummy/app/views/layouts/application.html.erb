@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render :partial => "shared/flash_messages" %>
 
-<%= yield %>
+  <%= render :partial => "shared/session" %>
 
+  <%= yield :catalogs_selector %>
+  <%= yield :layout %>
+  <%= yield :tray if user_signed_in? %>
 </body>
 </html>
